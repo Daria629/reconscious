@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medical.reconscious">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reconscious">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.IntroActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activities.BaseActivity" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.SignUpContactActivity" />
+        <activity android:name=".activities.SignUpMoreDetailActivity" />
+        <activity android:name=".activities.SignUpPasswordActivity" />
+        <activity android:name=".activities.DashboardActivity" />
+        <activity android:name=".activities.PackagesActivity" />
+        <activity android:name=".activities.FeelingSelectActivity" />
+        <activity android:name=".activities.JournalDetailActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.PaymentStepOneActivity" />
+        <activity android:name=".activities.PaymentStepTwoActivity"/>
+        <activity android:name=".activities.PaymentStepConfirmActivity" />
+        <activity android:name=".activities.PaymentStepConfirmedActivity" />
+        <activity android:name=".activities.AppointmentScheduleActivity" />
+    </application>
+
+</manifest>

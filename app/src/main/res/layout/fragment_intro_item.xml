@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/img_intro"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/intro_image2"
+            tools:ignore="ContentDescription"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline_img"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"/>
+        <TextView
+            android:id="@+id/txt_title1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/boston_regular"
+            android:text="@string/psychedelic_telehealth"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@+id/guideline_img"/>
+
+        <TextView
+            android:id="@+id/txt_title2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/intro_detail1_title"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:fontFamily="@font/boston_bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title1"/>
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="@string/intro_detail1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/boston_regular"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:translationX="-150dp"
+        android:src="@drawable/arachnoid"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:translationX="100dp"
+        android:src="@drawable/arachnoid_right"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

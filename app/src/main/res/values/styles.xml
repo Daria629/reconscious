@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DayTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/mcv_text_date_light</item>
+        <item name="fontFamily">@font/boston_semibold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WeekTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/mcv_text_date_light</item>
+        <item name="fontFamily">@font/boston_semibold</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="HeaderTextAppearance" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/mcv_text_date_light</item>
+        <item name="fontFamily">@font/boston_semibold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
